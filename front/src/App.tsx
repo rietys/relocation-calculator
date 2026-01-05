@@ -7,21 +7,18 @@ function App() {
 
   return (
     <>
-    <header className="page-header">
+    <header>
         <h1>IM_LEAVIN.bye</h1>
     </header>
     
     <main>
         <div className="container">
-              <Location placeholder='Current location'/>
-              <Location placeholder='Destination'/>
+              <Location/>
               <div className="divider"></div>
               <button className="submit-btn">SUBMIT</button>
               <div className="divider"></div> 
               <div style={{marginBottom: '10%'}}>
-                <Price name='TOTAL' price={1000}/>
-                <Price name='TOTAL' price={1000}/>
-                <Price name='TOTAL' price={1000}/>
+                <Price ticketPrice={300} rentPrice={700}/>
               </div>  
         </div>
     </main>

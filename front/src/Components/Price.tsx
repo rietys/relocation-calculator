@@ -1,11 +1,21 @@
-import '../App.scss'
+import './Price.scss'
 
-function Price({ price, name }: { price?: number; name?: string }) {
+function Price({ ticketPrice, rentPrice}: { ticketPrice?: number, rentPrice?: number }) {
     return (
-        <div className="cost-item">
-            <span className="cost-label">{name}:</span>
-            <span className="cost-value">{price}</span>
-        </div>
+        <>
+            <div className="cost-item total">
+                <span className="cost-label">TOTAL:</span>
+                <span className="cost-value">{(ticketPrice ?? 0) + (rentPrice ?? 0)}</span>
+            </div>
+            <div className="cost-item">
+                <span className="cost-label">TICKET:</span>
+                <span className="cost-value">{ticketPrice}</span>
+            </div>
+            <div className="cost-item">
+                <span className="cost-label">RENT:</span>
+                <span className="cost-value">{rentPrice}</span>
+            </div>
+        </>
     )
 }
 

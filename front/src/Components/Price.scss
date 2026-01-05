@@ -1,0 +1,45 @@
+.cost-section {//Price start
+    background-color: #f8f9fa;
+    border-top: 1px solid #eaeaea;
+    padding: 28px 32px;
+  }
+  
+  .cost-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  
+  .cost-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .cost-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .cost-value {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .total {
+    border-top: 2px solid #b0b0b0;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  
+  .total .cost-label {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2c3e50;
+  }
+  
+  .total .cost-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: #e74c3c;
+  }
